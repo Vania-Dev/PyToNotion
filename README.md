@@ -10,13 +10,13 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/Navi-SS">
+  <a href="https://github.com/Vania-Dev">
     <img src="images/SMAEPYP.png" alt="Logo" width="80" height="80">
   </a>
 
   <h3 align="center">PyToNotion</h3>
 
-  <a href="https://github.com/Navi-SS">
+  <a href="https://github.com/Vania-Dev">
     <img src="images/header.png" alt="Logo" style="height: 60%; width:60%;">
   </a>
 
@@ -24,11 +24,11 @@
     Un repositorio para la paqueteria de PyToNotion
     <br />
     <br />
-    <a href="https://github.com/Navi-SS/PyToNotion">Material adicional</a>
+    <a href="https://github.com/Vania-Dev/PyToNotion">Material adicional</a>
     ·
-    <a href="https://github.com/Navi-SS/PyToNotion/issues/new?labels=bug&template=bug-report---.md">Reportar un Error</a>
+    <a href="https://github.com/Vania-Dev/PyToNotion/issues/new?labels=bug&template=bug-report---.md">Reportar un Error</a>
     ·
-    <a href="https://github.com/Navi-SS/PyToNotion/issues/new?labels=enhancement&template=feature-request---.md">Solicitar una mejora</a>
+    <a href="https://github.com/Vania-Dev/PyToNotion/issues/new?labels=enhancement&template=feature-request---.md">Solicitar una mejora</a>
   </p>
 </div>
 
@@ -133,21 +133,21 @@ Distribuido bajo la licencia MIT. Mira el archivo `LICENSE.txt` para más inform
 
 Mi contacto - [VCard](https://vcard.idkey.com.mx/pmobnj7/)
 
-Link de SMAEPYP: [https://smaepyp.super.site/](https://smaepyp.super.site/)
+Link de VaniaDev: [https://vaniadev.super.site/](https://vaniadev.super.site/)
 
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/Navi-SS/PyToNotion.svg?style=for-the-badge
-[contributors-url]: https://github.com/Navi-SS/PyToNotion/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/Navi-SS/PyToNotion.svg?style=for-the-badge
-[forks-url]: https://github.com/Navi-SS/PyToNotion/network/members
-[stars-shield]: https://img.shields.io/github/stars/Navi-SS/PyToNotion.svg?style=for-the-badge
-[stars-url]: https://github.com/Navi-SS/PyToNotion/stargazers
-[issues-shield]: https://img.shields.io/github/issues/Navi-SS/PyToNotion.svg?style=for-the-badge
-[issues-url]: https://github.com/Navi-SS/PyToNotion/issues
-[license-shield]: https://img.shields.io/github/license/Navi-SS/PyToNotion.svg?style=for-the-badge
-[license-url]: https://github.com/Navi-SS/PyToNotion/blob/master/LICENSE.txt
+[contributors-shield]: https://img.shields.io/github/contributors/Vania-Dev/PyToNotion.svg?style=for-the-badge
+[contributors-url]: https://github.com/Vania-Dev/PyToNotion/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/Vania-Dev/PyToNotion.svg?style=for-the-badge
+[forks-url]: https://github.com/Vania-Dev/PyToNotion/network/members
+[stars-shield]: https://img.shields.io/github/stars/Vania-Dev/PyToNotion.svg?style=for-the-badge
+[stars-url]: https://github.com/Vania-Dev/PyToNotion/stargazers
+[issues-shield]: https://img.shields.io/github/issues/Vania-Dev/PyToNotion.svg?style=for-the-badge
+[issues-url]: https://github.com/Vania-Dev/PyToNotion/issues
+[license-shield]: https://img.shields.io/github/license/Vania-Dev/PyToNotion.svg?style=for-the-badge
+[license-url]: https://github.com/Vania-Dev/PyToNotion/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/ivan-casta%C3%B1eda/
 [Python]: https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54

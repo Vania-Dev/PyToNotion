@@ -11,12 +11,13 @@ class pyNotion:
     """
 
 
-    def __init__(self, token: str)  -> None:
+    def __init__(self, token: str, timeout: int = 10)  -> None:
         """
         Initialize a new pyNotion instance.
 
         Args:
             token (str): Notion token.
+            timeout (int): Request timeout in seconds. Default is 10.
         """
 
         self.headers = {
@@ -24,6 +25,12 @@ class pyNotion:
             'Content-Type': 'application/json', 
             'Notion-Version': '2022-06-28'
         }
+        self.timeout = timeout
+
+    
+    def _print_version(self) -> None:
+        print(f"Notion API Version: 0.0.2")
+
     
     
     def get_pages(self, search_params={"filter": {"value": "page", "property": "object"}}) -> list:
@@ -37,19 +44,10 @@ class pyNotion:
             list: All pages information.
         """
         search_response = requests.post('https://api.notion.com/v1/search', 
-        json=search_params, headers=self.headers)
+        json=search_params, headers=self.headers, timeout=self.timeout)
 
-        # Manejo de errores
-        if search_response.status_code != 200:
-            return search_response.json()
+        return search_response.json()
 
-        response = search_response.json()
-        for page in response["results"]:
-            if page["parent"]["type"] == "page_id":
-                page["page_name"] = page["properties"]["title"]["title"][0]["plain_text"]
-        
-        return response["results"]
-    
 
     def get_page(self, page_id: str) -> dict:
         """
@@ -62,16 +60,9 @@ class pyNotion:
             dict: Page information.
         """
         search_response = requests.get(f'https://api.notion.com/v1/pages/{page_id}', 
-        headers=self.headers)
+        headers=self.headers, timeout=self.timeout)
 
-        # Manejo de errores
-        if search_response.status_code != 200:
-            return search_response.json()
-
-        response = search_response.json()
-        response["name"] = response["properties"]["title"]["title"][0]["plain_text"]
-        
-        return response
+        return search_response.json()
     
 
     def update_page(self, page_id: str, content: dict) -> dict:
@@ -87,7 +78,7 @@ class pyNotion:
         """
         payload = json.dumps(content)
         search_response = requests.patch(f'https://api.notion.com/v1/pages/{page_id}', 
-        headers=self.headers, data=payload)
+        headers=self.headers, data=payload, timeout=self.timeout)
 
         return search_response.json()
     
@@ -106,7 +97,7 @@ class pyNotion:
             "archived": True
         })
         search_response = requests.patch(f'https://api.notion.com/v1/pages/{page_id}', 
-        headers=self.headers, data=payload)
+        headers=self.headers, data=payload, timeout=self.timeout)
 
         return search_response.json()
 
@@ -120,7 +111,7 @@ class pyNotion:
         """
         search_response = requests.get(
             'https://api.notion.com/v1/users/', 
-            headers=self.headers)
+            headers=self.headers, timeout=self.timeout)
         
         return search_response.json()
 
@@ -143,7 +134,7 @@ class pyNotion:
         })
         search_response = requests.post(
             'https://api.notion.com/v1/pages', 
-            headers=self.headers, data=payload)
+            headers=self.headers, data=payload, timeout=self.timeout)
         
         return search_response.json()
     
@@ -167,7 +158,7 @@ class pyNotion:
         })
         search_response = requests.post(
             'https://api.notion.com/v1/pages', 
-            headers=self.headers, data=payload)
+            headers=self.headers, data=payload, timeout=self.timeout)
         
         return search_response.json()
 
@@ -184,7 +175,7 @@ class pyNotion:
         """
         search_response = requests.get(
             f'https://api.notion.com/v1/blocks/{page_id}', 
-            headers=self.headers)
+            headers=self.headers, timeout=self.timeout)
         
         return search_response.json()
 
@@ -201,7 +192,7 @@ class pyNotion:
         """
         search_response = requests.get(
             f'https://api.notion.com/v1/blocks/{page_id}/children?page_size=100', 
-            headers=self.headers)
+            headers=self.headers, timeout=self.timeout)
 
         return search_response.json()
 
@@ -218,7 +209,7 @@ class pyNotion:
         """
         search_response = requests.delete(
             f'https://api.notion.com/v1/blocks/{block_id}', 
-            headers=self.headers)
+            headers=self.headers, timeout=self.timeout)
 
         return search_response.json()
     
@@ -237,7 +228,7 @@ class pyNotion:
         payload = json.dumps(content)
         search_response = requests.patch(
             f'https://api.notion.com/v1/blocks/{block_id}', 
-            headers=self.headers, data=payload)
+            headers=self.headers, data=payload, timeout=self.timeout)
         
         return search_response.json()
 
@@ -256,7 +247,7 @@ class pyNotion:
         payload = json.dumps(content)
         search_response = requests.patch(
             f'https://api.notion.com/v1/blocks/{block_id}/children', 
-            headers=self.headers, data=payload)
+            headers=self.headers, data=payload, timeout=self.timeout)
 
         return search_response.json()
     
@@ -273,7 +264,7 @@ class pyNotion:
         """
         search_response = requests.get(
             f'https://api.notion.com/v1/databases/{database_id}', 
-            headers=self.headers)
+            headers=self.headers, timeout=self.timeout)
         
         return search_response.json()
     
@@ -292,7 +283,7 @@ class pyNotion:
         data = json.dumps(query)
         search_response = requests.post(
             f'https://api.notion.com/v1/databases/{database_id}/query', 
-            headers=self.headers, data=data)
+            headers=self.headers, data=data, timeout=self.timeout)
         
         return search_response.json()
     
@@ -310,7 +301,7 @@ class pyNotion:
         data = json.dumps(data)
         search_response = requests.post(
             f'https://api.notion.com/v1/databases', 
-            headers=self.headers, data=data)
+            headers=self.headers, data=data, timeout=self.timeout)
         
         return search_response.json()
     
@@ -329,7 +320,7 @@ class pyNotion:
         data = json.dumps(data)
         search_response = requests.patch(
             f'https://api.notion.com/v1/databases/{database_id}', 
-            headers=self.headers, data=data)
+            headers=self.headers, data=data, timeout=self.timeout)
 
         return search_response.json()
     
@@ -346,7 +337,7 @@ class pyNotion:
         """
         search_response = requests.get(
             f'https://api.notion.com/v1/comments?block_id={block_id}&page_size=100', 
-            headers=self.headers)
+            headers=self.headers, timeout=self.timeout)
         
         return search_response.json()
     
