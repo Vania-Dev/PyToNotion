@@ -1,34 +1,35 @@
-[![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
+# 🐍 PyToNotion
 
+[![Contributors](https://img.shields.io/github/contributors/Vania-Dev/PyToNotion?style=for-the-badge&logo=github&label=Contributors&labelColor=101010)](https://github.com/Vania-Dev/PyToNotion/graphs/contributors)
+[![Forks](https://img.shields.io/github/forks/Vania-Dev/PyToNotion?style=for-the-badge&logo=github&label=Forks&labelColor=101010)](https://github.com/Vania-Dev/PyToNotion/forks)
+[![Stars](https://img.shields.io/github/stars/Vania-Dev/PyToNotion?style=for-the-badge&logo=github&labelColor=101010)](https://github.com/Vania-Dev/PyToNotion/stargazers)
+[![Issues](https://img.shields.io/github/issues/Vania-Dev/PyToNotion?style=for-the-badge&logo=github&label=Issues&labelColor=101010)](https://github.com/Vania-Dev/PyToNotion/issues)
+[![License](https://img.shields.io/github/license/Vania-Dev/PyToNotion?style=for-the-badge&logo=open-source-initiative&labelColor=101010)](https://github.com/Vania-Dev/PyToNotion/blob/main/LICENSE.txt)
+![PyPI - Version](https://img.shields.io/pypi/v/PyToNotion?style=for-the-badge&color=101010)
 
 
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
   <a href="https://github.com/Vania-Dev">
-    <img src="images/SMAEPYP.png" alt="Logo" width="80" height="80">
+    <img src="images/vaniadev.png" alt="Logo" width="80" height="80">
   </a>
 
-  <h3 align="center">PyToNotion</h3>
+  <h3 align="center">🐍 PyToNotion</h3>
 
   <a href="https://github.com/Vania-Dev">
-    <img src="images/header.png" alt="Logo" style="height: 60%; width:60%;">
+    <img src="images/PyToNotion.svg" alt="Logo" style="height: 60%; width:60%;">
   </a>
 
   <p align="center">
-    Un repositorio para la paqueteria de PyToNotion
+    A repository for the PyToNotion package
     <br />
     <br />
-    <a href="https://github.com/Vania-Dev/PyToNotion">Material adicional</a>
+    <a href="https://github.com/Vania-Dev/PyToNotion">Additional Material</a>
     ·
-    <a href="https://github.com/Vania-Dev/PyToNotion/issues/new?labels=bug&template=bug-report---.md">Reportar un Error</a>
+    <a href="https://github.com/Vania-Dev/PyToNotion/issues/new?labels=bug&template=bug-report---.md">Report Bug</a>
     ·
-    <a href="https://github.com/Vania-Dev/PyToNotion/issues/new?labels=enhancement&template=feature-request---.md">Solicitar una mejora</a>
+    <a href="https://github.com/Vania-Dev/PyToNotion/issues/new?labels=enhancement&template=feature-request---.md">Request Feature</a>
   </p>
 </div>
 
@@ -36,104 +37,163 @@
 
 <!-- TABLE OF CONTENTS -->
 <details>
-  <summary>Tabla de contenido</summary>
+  <summary>📑 Table of Contents</summary>
   <ol>
     <li>
-      <a href="#acerca-del-proyecto">Acerca del proyecto</a>
+      <a href="#-about-the-project">About The Project</a>
       <ul>
-        <li><a href="#construido-con">Construido con</a></li>
+        <li><a href="#️-built-with">Built With</a></li>
       </ul>
     </li>
-    <li><a href="#lista-de-videos">Lista de Videos</a></li>
+    <li><a href="#-project-structure">Project Structure</a></li>
+    <li><a href="#-whats-new---version-100">What's New - Version 1.0.0</a></li>
+    <li><a href="#-video-list">Video List</a></li>
     <li>
-      <a href="#comienza-a-usarlo">Comienza a usarlo</a>
+      <a href="#-getting-started">Getting Started</a>
       <ul>
-        <li><a href="#prerequisitos">Prerequisitos</a></li>
-        <li><a href="#instalación">Instalación</a></li>
+        <li><a href="#prerequisites">Prerequisites</a></li>
+        <li><a href="#installation">Installation</a></li>
       </ul>
     </li>
-    <li><a href="#contribución">Contribución</a></li>
-    <li><a href="#licencia">Licencia</a></li>
-    <li><a href="#contacto">Contacto</a></li>
+    <li><a href="#-contributing">Contributing</a></li>
+    <li><a href="#-license">License</a></li>
+    <li><a href="#-contact">Contact</a></li>
   </ol>
 </details>
 
 
 
 <!-- ABOUT THE PROJECT -->
-## Acerca Del Proyecto
+## 📖 About The Project
 
-Este repositorio cuenta con el código de la paqueteria PyToNotion, es la paqueteria de Python para conectarse con Notion y cuenta con ejemplos de como usar cada una de las funciones.
+This repository contains the code for the PyToNotion package, a Python library to connect with Notion that includes examples of how to use each function.
 
-### Construido Con
+**Notion API Documentation**: [https://developers.notion.com/guides/get-started/overview](https://developers.notion.com/guides/get-started/overview)
 
-El proyecto esta creado en el lenguaje de programación Python en su versión 3.12.X
+**Notion API Version**: `2026-03-11`
+
+### 🛠️ Built With
+
+The project is built with Python programming language version 3.12.X
 
 * [![Python][Python]][Python-url]
 
-## Lista de Videos
+## 📂 Project Structure
 
-- En proceso
+```
+PyToNotion/
+├── PyToNotion/
+│   ├── __init__.py
+│   └── pyNotion.py
+├── tests/
+│   ├── Blocks/
+│   ├── Comments/
+│   ├── Databases/
+│   ├── Datasources/
+│   ├── Pages/
+│   ├── Users/
+│   └── Views/
+├── images/
+├── LICENSE.txt
+├── README.md
+├── requirements.txt
+└── pyproject.toml
+```
+
+## 🎉 What's New - Version 1.0.0
+
+- ✨ **Initial release** of PyToNotion
+- 🔌 **Full integration** with Notion API (Version 2026-03-11)
+- 📄 **Page management**: Create, read, update and move pages
+- 🗄️ **Database management**: Create, query and update databases
+- 🧱 **Block management**: Append, retrieve, update and delete blocks
+- 💬 **Comment system**: Create, read, update and delete comments
+- 👥 **User management**: Get information about users and bots
+- 👁️ **View management**: Create, read, update and delete views
+- 📊 **Datasource support**: Create and query data sources
+- 😀 **Emoji retrieval** available in Notion
+- 📚 **Complete examples** of usage in the `tests/` directory
+- 📝 **Comprehensive documentation** with English comments
+
+## 🎥 Video List
+
+- In progress
 
 <!-- GETTING STARTED -->
-## Comienza A Usarlo
+## 🚀 Getting Started
 
-Este es un ejemplo de como logar ejecutar el proyecto y sus funciones internas, es necesario instalar la paqueteria o clonar el proyecto en tu local.
+This is an example of how to run the project and its internal functions. You need to install the package or clone the project locally.
 
-### Prerequisitos
+### Prerequisites
 
-Esta es la lista de blibliotecas o paqueterias que debes instalar para ejecutar el proyecto de forma adecuada.
+This is the list of libraries or packages you need to install to run the project properly.
 * pip
   ```sh
   pip install -r requirements.txt
   ```
 
-### Instalación
+### Installation
 
-_Abajo se muestra una guía para la instalación del repositorio_
+_Below is a guide for installing the repository_
 
-1. Clonar el repositorio
+1. Clone the repository
    ```sh
    git clone https://github.com/your_username_/PyToNotion.git
    ```
-2. Instalar las paqueterias
+2. Install the packages
    ```sh
    pip install -r requirements.txt
    ```
-3. Instalar la paqueteria
+3. Install the package
    ```sh
    pip install PyToNotion
    ```
 
 
 <!-- CONTRIBUTING -->
-## Contribución
+## 🤝 Contributing
 
-La contibución hace que la comunidad del open source sea un gran lugar para aprender, inspirar y crear. Cualquier contribución que realices sera **muy agradecida**
+Contributions make the open source community a great place to learn, inspire, and create. Any contributions you make are **greatly appreciated**
 
-Si tienes una sugerencia para mejorar el proyecto, por favor realiza un fork al repositorio y crea un pull request. Tambien puedes hacer algo an simple como abrir una incidencia con el tag "mejora".
+If you have a suggestion to improve the project, please fork the repository and create a pull request. You can also simply open an issue with the tag "enhancement".
 
-No olvides darle una estrella al repositorio :D! Muchas Gracias!
+Don't forget to give the repository a star :D! Thank you!
 
 
-1. Realiza un fork al proyecto
-2. Crea tu rama (`git checkout -b feature/AmazingFeature`)
-3. Realiza tus cambios con commit (`git commit -m 'Add some AmazingFeature'`)
-4. Sube tu rama (`git push origin feature/AmazingFeature`)
-5. Abre un Pull Request
+1. Fork the project
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
 
 <!-- LICENSE -->
-## Licencia
+## 📄 License
 
-Distribuido bajo la licencia MIT. Mira el archivo `LICENSE.txt` para más información.
+Distributed under the LOSA (License Open Source with Attribution) v2.0 license. See `LICENSE.txt` file for more information.
 
 <!-- CONTACT -->
-## Contacto
+## 📧 Contact
 
-Mi contacto - [VCard](https://vcard.idkey.com.mx/pmobnj7/)
+[![YouTube](https://img.shields.io/badge/YouTube-vaniadev-FF0000?style=for-the-badge&logo=youtube&logoColor=white&labelColor=101010)](https://youtube.com/@VANIADEV)
+[![Instagram](https://img.shields.io/badge/Instagram-@vania_dev_-E4405F?style=for-the-badge&logo=instagram&logoColor=white&labelColor=101010)](https://www.instagram.com/vania_dev_/)
+[![TikTok](https://img.shields.io/badge/TikTok-@vania_dev_-69C9D0?style=for-the-badge&logo=tiktok&logoColor=white&labelColor=101010)](https://www.tiktok.com/@vania_dev_)
+[![Facebook](https://img.shields.io/badge/Facebook-@vaniadev-1877F2?style=for-the-badge&logo=facebook&logoColor=white&labelColor=101010)](https://www.facebook.com/SMAEMX)
+[![Link](https://img.shields.io/badge/Links-vaniadev-39E09B?style=for-the-badge&logo=Linktree&logoColor=white&labelColor=101010)](https://beacons.ai/vaniadev)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Ivan_Castañeda-0077B5?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=101010)](https://www.linkedin.com/in/ivan-castaneda-nazario/)
+[![Web](https://img.shields.io/badge/Web-vaniadev-14a1f0?style=for-the-badge&logo=dev.to&logoColor=white&labelColor=101010)](https://vaniadev.super.site/)
+[![BuyMeACoffee](https://img.shields.io/badge/Buy_Me_A_Coffee-apoya_mi_trabajo-FFDD00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=white&labelColor=101010)](https://buymeacoffee.com/vania_vaniusha)
 
-Link de VaniaDev: [https://vaniadev.super.site/](https://vaniadev.super.site/)
+
+---
+
+<div align="center">
+
+**Hazlo con el tipo de ❤️ que deja huellas en el alma**
+
+[⭐ Star this repo](https://github.com/Vania-Dev/PyToNotion) • [🐛 Report Bug](https://github.com/Vania-Dev/PyToNotion/issues) • [✨ Request Feature](https://github.com/Vania-Dev/PyToNotion/issues)
+
+</div>
 
 
 <!-- MARKDOWN LINKS & IMAGES -->

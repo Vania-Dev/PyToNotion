@@ -1,11 +1,20 @@
-from pyNotion.pyNotion import pyNotion
+"""Example: Append child blocks to a Notion page or block.
+
+This script demonstrates how to add new content blocks (heading, paragraph)
+to an existing Notion page.
+"""
+from PyToNotion.pyNotion import pyNotion
 import os
 from dotenv import load_dotenv
 
+# Load environment variables from .env file
 load_dotenv()
 
+# Initialize PyToNotion client with API key
 notion = pyNotion(os.getenv("API_KEY"))
+page_id = os.getenv("PAGE_ID")
 
+# Define the content blocks to append
 content ={
         "children": [
             {
@@ -42,6 +51,6 @@ content ={
         ]
         }
 
-block = "ad658c3f-b3e1-4511-ad8c-ccec45bcc950"
-block = notion.append_block_children(block, content)
+# Append the blocks and print the response
+block = notion.append_block_children(page_id, content)
 print(block)

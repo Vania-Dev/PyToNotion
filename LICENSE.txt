@@ -1,6 +1,6 @@
-MIT License
+Custom Open Source License with Attribution Requirement (LOSA v2.0)
 
-Copyright (c) [2024] [Hector Ivan Castañeda Nazario]
+Copyright (c) 2026 Hector Ivan Castañeda Nazario
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -9,13 +9,52 @@ to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
 copies of the Software, and to permit persons to whom the Software is
 furnished to do so, subject to the following conditions:
 
+1. Permission
+
+The Software is open source and may be freely used for personal, educational,
+research, or commercial purposes.
+
+2. Preservation of Copyright
+
 The above copyright notice and this permission notice shall be included in all
 copies or substantial portions of the Software.
 
+3. Attribution Requirement (Project-Level Requirement)
+
+While this License grants full usage rights, the project as a whole requires
+that proper attribution to the original author be maintained in visible form.
+
+This includes at minimum:
+
+- Retention of author credit in repository documentation (README or LICENSE)
+- Preservation of author credit in any fork or derivative repository
+
+Recommended attribution text:
+
+    "Original project created by Hector Ivan Castañeda Nazario"
+
+4. User Interface Attribution (Recommended but Not Mandatory by Law)
+
+If this Software is used in a product, application, or service with a user
+interface, it is strongly recommended that visible credit be given to the
+original author in an "About", "Credits", or "Information" section.
+
+Recommended display text:
+
+    "Built using software originally created by Hector Ivan Castañeda Nazario"
+
+5. Derivative Works
+
+Modifications and derivative works are allowed without restriction, provided
+that the attribution in Section 3 is preserved in repository-level documentation.
+
+6. No Warranty
+
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+
+IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
+DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR
+OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE
+OR OTHER DEALINGS IN THE SOFTWARE.
