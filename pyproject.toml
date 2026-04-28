@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "PyToNotion"
-version = "0.0.2"
+version = "1.0.0"
 authors = [
     { name="vania_vaniusha", email="ivan.castaneda.nazario@gmail.com" },
 ]

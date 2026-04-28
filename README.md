@@ -4,7 +4,6 @@
 [![Forks](https://img.shields.io/github/forks/Vania-Dev/PyToNotion?style=for-the-badge&logo=github&label=Forks&labelColor=101010)](https://github.com/Vania-Dev/PyToNotion/forks)
 [![Stars](https://img.shields.io/github/stars/Vania-Dev/PyToNotion?style=for-the-badge&logo=github&labelColor=101010)](https://github.com/Vania-Dev/PyToNotion/stargazers)
 [![Issues](https://img.shields.io/github/issues/Vania-Dev/PyToNotion?style=for-the-badge&logo=github&label=Issues&labelColor=101010)](https://github.com/Vania-Dev/PyToNotion/issues)
-[![License](https://img.shields.io/github/license/Vania-Dev/PyToNotion?style=for-the-badge&logo=open-source-initiative&labelColor=101010)](https://github.com/Vania-Dev/PyToNotion/blob/main/LICENSE.txt)
 ![PyPI - Version](https://img.shields.io/pypi/v/PyToNotion?style=for-the-badge&color=101010)
 
 
